@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Diyan Maner</title>
+  <meta name="description" content="Research at IITM on Tropospheric Temperature Gradients (TTG) and El Niño dynamics, published in Ocean Digest by the Ocean Society of India.">
+  <link rel="canonical" href="https://dynm13.github.io/research.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Research — Diyan Maner">
+  <meta property="og:description" content="3D web visualization of Tropospheric Temperature Gradients and El Niño patterns at IITM, published in Ocean Digest.">
+  <meta property="og:url" content="https://dynm13.github.io/research.html">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Security & Anti-scrape -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:; frame-src https://www.oceansociety.in; connect-src 'none';">
+  <meta name="robots" content="index, follow, noai, noimageai, noarchive">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand" aria-label="Diyan Maner — Home">
+        Diyan Maner
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav id="primary-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="research.html" class="nav-link active" aria-current="page">Research</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Header -->
+    <header class="article-header">
+      <div class="container" style="max-width: 840px;">
+        <span class="eyebrow">Research Case Study</span>
+        <h1 style="margin-top: 8px; margin-bottom: 16px;">Visualizing Tropospheric Temperature Gradients &amp; El Niño Wind Dynamics</h1>
+        <p class="text-muted" style="font-size: 18px; line-height: 1.6;">
+          Processing atmospheric wind vector fields with Python and Matplotlib to build an interactive web animation demonstrating how El Niño alters Tropospheric Temperature Gradients and Indian monsoon circulation.
+        </p>
+
+        <div class="article-header__meta">
+          <div><strong>Author:</strong> Diyan Maner</div>
+          <div><strong>Supervisor:</strong> Dr. Supriyo Chakraborty</div>
+          <div><strong>Affiliation:</strong> Indian Institute of Tropical Meteorology (IITM)</div>
+          <div><strong>Period:</strong> Jun 2026 – Aug 2026</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <article class="container article-content">
+      <div class="callout">
+        <p>
+          <strong>Publication:</strong> Research outcomes and visualization were accepted and published in <em>Ocean Digest</em>, the quarterly publication of the <strong>Ocean Society of India</strong>.
+          <a href="https://www.oceansociety.in/docs/ocean/ocean_digest/2026/Ocean_Digest_June_2026.pdf" target="_blank" rel="noopener noreferrer" style="margin-left: 6px;">Read Publication (PDF) ↗</a>
+        </p>
+      </div>
+
+      <h2>Scientific Context: TTG &amp; El Niño</h2>
+      <p>
+        The <strong>Tropospheric Temperature Gradient (TTG)</strong>—denoted as $\Delta\text{TT}$—is a primary thermodynamic engine of the Indian Summer Monsoon. It represents the temperature contrast between the upper troposphere over the northern landmass (South Asia and the Tibetan Plateau, ~5°N–35°N, 40°E–100°E) and the southern equatorial Indian Ocean (~15°S–5°N, 40°E–100°E), typically averaged across the 600 hPa to 200 hPa vertical layer.
+      </p>
+      <p>
+        Under normal monsoon conditions, strong northern heating produces a steep positive meridional gradient, pulling moisture-laden low-level southwesterly winds (the Findlater jet) across the Arabian Sea into India.
+      </p>
+      <p>
+        During <strong>El Niño</strong> phases (anomalous sea surface warming in the equatorial Pacific, Niño 3.4 region), the atmospheric Walker circulation shifts eastward. This induces anomalous upper-tropospheric subsidence and anomalous thermal warming patterns over the tropics, diminishing the meridional temperature gradient. The weakened TTG slackens low-level southwesterly winds and suppresses convective rainfall, often resulting in severe monsoon deficits.
+      </p>
+
+      <h2>Data Sources &amp; Processing Pipeline</h2>
+      <p>
+        To model and communicate these circulation changes clearly, the project bridged scientific data processing with web visualization:
+      </p>
+      <ul>
+        <li><strong>Atmospheric Datasets:</strong> Analyzed gridded climate reanalysis datasets containing vertical tropospheric temperature profiles ($T$) and horizontal wind components—zonal ($u$) and meridional ($v$) vectors—at critical pressure levels (850 hPa low-level flow and 200 hPa upper-level easterly jet).</li>
+        <li><strong>Vector Processing in Python &amp; Matplotlib:</strong> Extracted $u$ and $v$ wind velocity matrices, computed wind speed, divergence, and direction angles, and generated vector streamplots and quiver representations using Python's scientific stack (`NumPy`, `Matplotlib`).</li>
+        <li><strong>Coordinate Extraction:</strong> Converted continuous vector fields and isobar contours into optimized JSON coordinate trajectories and animation frame sequences.</li>
+      </ul>
+
+      <h2>Frontend Web Animation</h2>
+      <p>
+        Atmospheric scientists and journal readers needed to inspect dynamic wind direction shifts without installing scientific Python libraries or GIS tools. I developed an interactive in-browser animation:
+      </p>
+      <ul>
+        <li><strong>Dynamic Vector Field:</strong> Animated wind direction flow lines across the Indian Ocean and subcontinent to illustrate wind deceleration and direction deflection during El Niño years.</li>
+        <li><strong>Direct Integration:</strong> Deployed as a standalone lightweight web animation hosted directly on the Ocean Society of India portal to accompany the published journal issue.</li>
+      </ul>
+
+      <h2>Technologies Used</h2>
+      <div class="card__tags" style="margin-bottom: 24px;">
+        <span class="tag">Python</span>
+        <span class="tag">Matplotlib</span>
+        <span class="tag">NumPy</span>
+        <span class="tag">JavaScript (ES6+)</span>
+        <span class="tag">HTML5 Canvas</span>
+        <span class="tag">Climate Analytics</span>
+        <span class="tag">Vector Fields</span>
+      </div>
+
+      <h2>Outcomes</h2>
+      <ul>
+        <li><strong>Published in Ocean Digest:</strong> The methodology, findings, and animation were accepted and published by the Ocean Society of India in the June 2026 issue.</li>
+        <li><strong>Interactive Accessibility:</strong> Replaced static, hard-to-interpret 2D wind arrows with an intuitive web animation that illustrates atmospheric responses to El Niño.</li>
+      </ul>
+
+      <h2>Live Animation Preview</h2>
+      <div class="interactive-preview">
+        <iframe 
+          src="https://www.oceansociety.in/TTG_animation_for_OD.html" 
+          title="Tropospheric Temperature Gradient 3D Animation" 
+          class="preview-frame"
+          loading="lazy"
+          allow="fullscreen"
+        ></iframe>
+        <div class="preview-bar">
+          <span>Live animation via Ocean Society of India</span>
+          <div style="display: flex; gap: 16px;">
+            <a href="https://www.oceansociety.in/TTG_animation_for_OD.html" target="_blank" rel="noopener noreferrer" class="card__link">
+              Open standalone animation ↗
+            </a>
+            <a href="https://www.oceansociety.in/docs/ocean/ocean_digest/2026/Ocean_Digest_June_2026.pdf" target="_blank" rel="noopener noreferrer" class="card__link">
+              Read publication (PDF) ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group" style="margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);">
+        <a href="projects.html" class="btn btn--outline">← Back to Projects</a>
+        <a href="contact.html" class="btn btn--primary">Get in Touch</a>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">© 2026 Diyan Maner</p>
+      <ul class="site-footer__links">
+        <li><a href="https://github.com/DynM13" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/diyan-maner13/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://x.com/diyan1306" target="_blank" rel="noopener noreferrer">X</a></li>
+        <li><a href="mailto:diyanmaner06@gmail.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

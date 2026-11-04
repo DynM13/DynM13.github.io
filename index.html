@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diyan Maner — Backend Developer</title>
+  <meta name="description" content="Portfolio of Diyan Maner — Backend developer working with Java, Spring Boot, SQL, and database indexing.">
+  <link rel="canonical" href="https://dynm13.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Diyan Maner — Backend Developer">
+  <meta property="og:description" content="Backend developer working with Java, Spring Boot, SQL, and database indexing.">
+  <meta property="og:url" content="https://dynm13.github.io/">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Security & Anti-scrape -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:; frame-src https://www.oceansociety.in; connect-src 'none';">
+  <meta name="robots" content="index, follow, noai, noimageai, noarchive">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand" aria-label="Diyan Maner — Home">
+        Diyan Maner
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav id="primary-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="hero section--bordered">
+      <div class="container">
+        <h1 class="hero__title">Backend engineer.<br>Systems that work.</h1>
+        <p class="hero__subtitle">
+          I build backend services and REST APIs with Java and Spring Boot, with a focus on database design, indexing, and clean code.
+        </p>
+        <div class="btn-group">
+          <a href="projects.html" class="btn btn--primary">View Projects</a>
+          <a href="assets/Diyan_Maner_Resume.pdf" class="btn btn--outline" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section section--alt section--bordered">
+      <div class="container">
+        <div class="section-header section-header--inline">
+          <h2>Projects</h2>
+          <a href="projects.html" class="card__link">All projects →</a>
+        </div>
+
+        <div class="grid">
+          <!-- Pause-Pay -->
+          <article class="card">
+            <div class="card__header">
+              <span class="eyebrow">Dispatch Simulation</span>
+              <span class="card__date">Java · Spring Boot · AWS</span>
+            </div>
+            <h3 class="card__title">
+              <a href="projects.html#project-pausepay">Pause-Pay: Dispatch Interceptor</a>
+            </h3>
+            <p class="card__description">
+              Heat-aware dispatch service for delivery fleets. Tracks cumulative rider heat exposure over a shift, pauses assignments when safety thresholds are reached, and models rest wage credits.
+            </p>
+            <div class="card__tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">AWS SDK</span>
+              <span class="tag">Simulation</span>
+            </div>
+            <div class="card__footer">
+              <a href="projects.html#project-pausepay" class="card__link">Details →</a>
+              <a href="https://github.com/DynM13/Pause-Pay" target="_blank" rel="noopener noreferrer" class="card__link">GitHub ↗</a>
+            </div>
+          </article>
+
+          <!-- E-Commerce -->
+          <article class="card">
+            <div class="card__header">
+              <span class="eyebrow">Backend</span>
+              <span class="card__date">Java · Hibernate · MySQL</span>
+            </div>
+            <h3 class="card__title">
+              <a href="projects.html#project-ecommerce">Spring Boot E-Commerce Platform</a>
+            </h3>
+            <p class="card__description">
+              RESTful service handling product catalogs, shopping carts, and order checkout. Built with JPA/Hibernate over MySQL, atomic transactions, and Spring Security RBAC.
+            </p>
+            <div class="card__tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Hibernate</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <div class="card__footer">
+              <a href="projects.html#project-ecommerce" class="card__link">Details →</a>
+              <a href="https://github.com/DynM13/Spring-Boot-Ecommerce-Platform" target="_blank" rel="noopener noreferrer" class="card__link">GitHub ↗</a>
+            </div>
+          </article>
+
+          <!-- Custom LRU Cache -->
+          <article class="card">
+            <div class="card__header">
+              <span class="eyebrow">Data Structures</span>
+              <span class="card__date">Java · Algorithms</span>
+            </div>
+            <h3 class="card__title">
+              <a href="projects.html#project-lru-cache">Custom LRU Cache</a>
+            </h3>
+            <p class="card__description">
+              In-memory cache implemented with a custom Doubly Linked List and HashMap to achieve strict O(1) time complexity for lookup and eviction without library wrappers.
+            </p>
+            <div class="card__tags">
+              <span class="tag">Java</span>
+              <span class="tag">Data Structures</span>
+              <span class="tag">O(1)</span>
+              <span class="tag">Concurrency</span>
+            </div>
+            <div class="card__footer">
+              <a href="projects.html#project-lru-cache" class="card__link">Details →</a>
+              <a href="https://github.com/DynM13/custom-LRU-cache" target="_blank" rel="noopener noreferrer" class="card__link">GitHub ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subtle Research Note -->
+    <section class="section" style="padding-block: 48px;">
+      <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+        <p class="text-muted" style="margin: 0; font-size: 15px;">
+          Also worked on atmospheric wind vector modeling and web animation at IITM.
+        </p>
+        <a href="research.html" class="card__link">View research note →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">© 2026 Diyan Maner</p>
+      <ul class="site-footer__links">
+        <li><a href="https://github.com/DynM13" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/diyan-maner13/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://x.com/diyan1306" target="_blank" rel="noopener noreferrer">X</a></li>
+        <li><a href="mailto:diyanmaner06@gmail.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

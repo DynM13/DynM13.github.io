@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Diyan Maner</title>
+  <meta name="description" content="Backend projects by Diyan Maner — Java, Spring Boot APIs, relational database schemas, SQL indexing, and design patterns.">
+  <link rel="canonical" href="https://dynm13.github.io/projects.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects — Diyan Maner">
+  <meta property="og:description" content="Java, Spring Boot APIs, relational database schemas, SQL indexing, and design patterns.">
+  <meta property="og:url" content="https://dynm13.github.io/projects.html">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Security & Anti-scrape -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:; frame-src https://www.oceansociety.in; connect-src 'none';">
+  <meta name="robots" content="index, follow, noai, noimageai, noarchive">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand" aria-label="Diyan Maner — Home">
+        Diyan Maner
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav id="primary-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link active" aria-current="page">Projects</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Projects Header + Grid -->
+    <section class="section section--bordered">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Work</span>
+          <h1>Projects</h1>
+          <p>Backend services, database projects, and algorithm implementations built with Java and Spring Boot.</p>
+        </div>
+
+        <!-- Filter Chips -->
+        <div class="filter-bar" role="group" aria-label="Filter by category">
+          <button class="filter-chip active" data-filter="all">All</button>
+          <button class="filter-chip" data-filter="backend">Backend</button>
+          <button class="filter-chip" data-filter="java">Java</button>
+          <button class="filter-chip" data-filter="web">Web</button>
+          <button class="filter-chip" data-filter="research">Research</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid" id="projects-grid">
+
+          <!-- Pause-Pay -->
+          <article class="card project-card" data-category="backend java web" id="card-pausepay">
+            <div class="card__header">
+              <span class="eyebrow">Dispatch Simulation</span>
+              <span class="card__date">Java · Spring Boot · AWS</span>
+            </div>
+            <h2 class="card__title">
+              <a href="#project-pausepay">Pause-Pay: Dispatch Interceptor</a>
+            </h2>
+            <p class="card__description">
+              Heat-aware dispatch system for delivery fleets. Tracks cumulative driver heat strain over a shift, pauses order assignments at safety thresholds, and models rest wage credits.
+            </p>
+            <div class="card__tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">AWS SDK</span>
+              <span class="tag">Simulation</span>
+            </div>
+            <div class="card__footer">
+              <a href="#project-pausepay" class="card__link">Details ↓</a>
+              <a href="https://github.com/DynM13/Pause-Pay" target="_blank" rel="noopener noreferrer" class="card__link">GitHub ↗</a>
+            </div>
+          </article>
+
+          <!-- Food Donation -->
+          <article class="card project-card" data-category="backend java" id="card-food-donation">
+            <div class="card__header">
+              <span class="eyebrow">Backend</span>
+              <span class="card__date">Java · Spring Boot</span>
+            </div>
+            <h2 class="card__title">
+              <a href="#project-food-donation">Food Donation &amp; Redistribution Platform</a>
+            </h2>
+            <p class="card__description">
+              Multi-role platform connecting donors, NGOs, and volunteers across the donation lifecycle. Built with 20+ REST APIs, JWT authentication, and MySQL schemas.
+            </p>
+            <div class="card__tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Spring Security</span>
+              <span class="tag">JPA</span>
+            </div>
+            <div class="card__footer">
+              <a href="#project-food-donation" class="card__link">Details ↓</a>
+              <a href="https://github.com/DynM13" target="_blank" rel="noopener noreferrer" class="card__link">GitHub ↗</a>
+            </div>
+          </article>
+
+          <!-- E-Commerce -->
+          <article class="card project-card" data-category="backend java" id="card-ecommerce">
+            <div class="card__header">
+              <span class="eyebrow">Backend</span>
+              <span class="card__date">Java · Hibernate</span>
+            </div>
+            <h2 class="card__title">
+              <a href="#project-ecommerce">Spring Boot E-Commerce Platform</a>
+            </h2>
+            <p class="card__description">
+              RESTful service handling product catalogs, shopping carts, and order checkout with JPA/Hibernate persistence, atomic transactions, and Spring Security.
+            </p>
+            <div class="card__tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Hibernate</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">REST APIs</span>
+            </div>
+            <div class="card__footer">
+              <a href="#project-ecommerce" class="card__link">Details ↓</a>
+              <a href="https://github.com/DynM13/Spring-Boot-Ecommerce-Platform" target="_blank" rel="noopener noreferrer" class="card__link">GitHub ↗</a>
+            </div>
+          </article>
+
+          <!-- Climate Visualization -->
+          <article class="card project-card" data-category="research web" id="card-climate">
+            <div class="card__header">
+              <span class="eyebrow">Research &amp; Analytics</span>
+              <span class="card__date">Python · Matplotlib · Web</span>
+            </div>
+            <h2 class="card__title">
+              <a href="#project-climate">Tropospheric Temperature Gradient Visualization</a>
+            </h2>
+            <p class="card__description">
+              Processed atmospheric wind vectors and Tropospheric Temperature Gradients (TTG) in Python/Matplotlib, then built an interactive web animation demonstrating El Niño monsoon impacts.
+            </p>
+            <div class="card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">Matplotlib</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Vector Fields</span>
+              <span class="tag">Climate</span>
+            </div>
+            <div class="card__footer">
+              <a href="https://www.oceansociety.in/TTG_animation_for_OD.html" target="_blank" rel="noopener noreferrer" class="card__link">Live Animation ↗</a>
+              <a href="#project-climate" class="card__link">Details ↓</a>
+            </div>
+          </article>
+
+          <!-- LRU Cache -->
+          <article class="card project-card" data-category="backend java" id="card-lru-cache">
+            <div class="card__header">
+              <span class="eyebrow">Data Structures</span>
+              <span class="card__date">Java · Algorithms</span>
+            </div>
+            <h2 class="card__title">
+              <a href="#project-lru-cache">Custom LRU Cache</a>
+            </h2>
+            <p class="card__description">
+              In-memory cache implemented with a custom Doubly Linked List and HashMap to achieve strict O(1) time complexity for lookup and eviction without library wrappers.
+            </p>
+            <div class="card__tags">
+              <span class="tag">Java</span>
+              <span class="tag">Data Structures</span>
+              <span class="tag">HashMap</span>
+              <span class="tag">O(1)</span>
+            </div>
+            <div class="card__footer">
+              <a href="#project-lru-cache" class="card__link">Details ↓</a>
+              <a href="https://github.com/DynM13/custom-LRU-cache" target="_blank" rel="noopener noreferrer" class="card__link">GitHub ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Deep Dive: Pause-Pay ── -->
+    <section class="section section--bordered" id="project-pausepay">
+      <div class="container article-content">
+        <span class="eyebrow">Fleet &amp; Dispatch Simulation</span>
+        <h2>Pause-Pay: Dispatch Interceptor &amp; Heat Protection</h2>
+        <div class="article-header__meta" style="margin-bottom: 24px;">
+          <span><strong>Role:</strong> Backend &amp; Simulation Developer</span>
+          <span><strong>Stack:</strong> Java, Spring Boot, AWS SDK, Simulation Engine</span>
+          <span><strong>Repo:</strong> DynM13/Pause-Pay</span>
+        </div>
+
+        <p>
+          On-demand delivery platforms assign orders primarily based on proximity, ignoring cumulative driver heat strain during high-temperature conditions. Because couriers are paid strictly per delivery, taking unpaid cooling breaks directly reduces earnings.
+        </p>
+        <p>
+          <strong>Pause-Pay</strong> models an alternative dispatch workflow: tracking cumulative heat exposure per courier, pausing order assignments when safe limits are reached, and calculating micro-wage credits during rest periods to prevent income loss.
+        </p>
+
+        <h3>Technical Highlights</h3>
+        <ul>
+          <li><strong>Cumulative Exposure Tracking:</strong> Calculates thermal dose across shift duration rather than relying on a static ambient temperature point.</li>
+          <li><strong>Dispatch Intervention:</strong> Intercepts closest-courier assignment when a driver hits exposure thresholds, redirecting new orders to available lower-strain drivers.</li>
+          <li><strong>Recovery Routing:</strong> Directs couriers taking cooling breaks to designated shaded rest zones and hydration points.</li>
+          <li><strong>Rest Wage Credits:</strong> Models a credit calculation system that offsets lost earnings during mandatory cooling intervals.</li>
+          <li><strong>Shift Simulator:</strong> Replays identical shift delivery traffic through standard nearest-driver dispatch versus Pause-Pay dispatch to compare completion rates and driver exposure profiles.</li>
+          <li><strong>AWS Credential Isolation:</strong> Configured server-side AWS SDK clients via the default credential provider chain, keeping cloud keys off the frontend.</li>
+        </ul>
+
+        <div class="btn-group">
+          <a href="https://github.com/DynM13/Pause-Pay" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View on GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Deep Dive: Food Donation ── -->
+    <section class="section section--bordered" id="project-food-donation">
+      <div class="container article-content">
+        <span class="eyebrow">Backend Platform</span>
+        <h2>Food Donation &amp; Redistribution Platform</h2>
+        <div class="article-header__meta" style="margin-bottom: 24px;">
+          <span><strong>Role:</strong> Backend Developer</span>
+          <span><strong>Stack:</strong> Java, Spring Boot, MySQL, Spring Security, JPA/Hibernate, JWT</span>
+          <span><strong>Repository:</strong> DynM13</span>
+        </div>
+
+        <p>
+          A multi-role backend application connecting surplus food donors with local NGOs and volunteers across the entire donation lifecycle.
+        </p>
+
+        <h3>Technical Highlights</h3>
+        <ul>
+          <li><strong>Role-Based Access Control:</strong> Implemented 20+ REST APIs secured with Spring Security, JWT authentication, and BCrypt password hashing for Donor, NGO, Volunteer, and Admin roles.</li>
+          <li><strong>Relational Data Modeling:</strong> Designed normalized MySQL schemas with JPA entities and mappings for users, donation listings, pickup requests, and delivery confirmations.</li>
+          <li><strong>Donation State Management:</strong> Built workflow endpoints managing the complete lifecycle: food listing creation, NGO acceptance, pickup assignment, and volunteer delivery confirmation.</li>
+          <li><strong>API Verification:</strong> Validated role authorization checks, parameter validation, and exception handling using Postman test collections.</li>
+        </ul>
+
+        <div class="btn-group">
+          <a href="https://github.com/DynM13" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View on GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Deep Dive: E-Commerce ── -->
+    <section class="section section--bordered" id="project-ecommerce">
+      <div class="container article-content">
+        <span class="eyebrow">Backend Service</span>
+        <h2>Spring Boot E-Commerce Platform</h2>
+        <div class="article-header__meta" style="margin-bottom: 24px;">
+          <span><strong>Role:</strong> Backend Developer</span>
+          <span><strong>Stack:</strong> Java, Spring Boot, Hibernate/JPA, MySQL, Spring Security, REST APIs</span>
+          <span><strong>Repo:</strong> DynM13/Spring-Boot-Ecommerce-Platform</span>
+        </div>
+
+        <p>
+          A modular backend service providing RESTful endpoints for product browsing, shopping cart management, and order checkout.
+        </p>
+
+        <h3>Technical Highlights</h3>
+        <ul>
+          <li><strong>RESTful API Design:</strong> Developed endpoints for product catalog search, customer shopping carts, and order processing across the purchase lifecycle.</li>
+          <li><strong>Data Modeling:</strong> Modeled user, product, shopping cart, and order relationships using Hibernate/JPA over MySQL for persistent storage.</li>
+          <li><strong>Transaction Safety:</strong> Implemented atomic transactions during checkout to prevent race conditions and maintain inventory consistency across concurrent orders.</li>
+          <li><strong>Security:</strong> Configured Spring Security and BCrypt authentication to safeguard buyer checkout operations and restrict inventory endpoints to administrators.</li>
+        </ul>
+
+        <div class="btn-group">
+          <a href="https://github.com/DynM13/Spring-Boot-Ecommerce-Platform" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View on GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Deep Dive: Climate ── -->
+    <section class="section section--bordered" id="project-climate">
+      <div class="container article-content">
+        <span class="eyebrow">Research — IITM</span>
+        <h2>Tropospheric Temperature Gradient (TTG) &amp; El Niño Wind Animation</h2>
+        <div class="article-header__meta" style="margin-bottom: 24px;">
+          <span><strong>Role:</strong> Research Intern &amp; Visualization Developer</span>
+          <span><strong>Stack:</strong> Python, Matplotlib, NumPy, JavaScript, HTML5 Canvas</span>
+          <span><strong>Institution:</strong> Indian Institute of Tropical Meteorology (IITM)</span>
+        </div>
+
+        <p>
+          The Tropospheric Temperature Gradient (TTG) measures upper-air thermal contrast between South Asia and the equatorial Indian Ocean—a primary thermodynamic driver of the Indian Summer Monsoon. During El Niño events, anomalous equatorial Pacific warming alters Walker circulation, reducing TTG and weakening low-level southwesterly monsoon winds over India.
+        </p>
+
+        <h3>Technical Highlights</h3>
+        <ul>
+          <li><strong>Wind Vector Processing:</strong> Parsed gridded reanalysis wind datasets ($u$ and $v$ velocity vectors at 850 hPa and 200 hPa) in Python, computing wind speed, divergence, and direction angles.</li>
+          <li><strong>Matplotlib Modeling:</strong> Generated baseline streamplots and quiver visualizations in Python using <code>matplotlib</code> to evaluate circulation anomalies during normal versus El Niño years.</li>
+          <li><strong>Frontend Animation:</strong> Exported coordinate vector flows to an interactive in-browser canvas animation hosted live on the Ocean Society of India portal.</li>
+        </ul>
+
+        <p class="text-muted" style="font-size: 14px; margin-top: 16px;">
+          The research methodology and animation were published in <a href="https://www.oceansociety.in/docs/ocean/ocean_digest/2026/Ocean_Digest_June_2026.pdf" target="_blank" rel="noopener noreferrer"><em>Ocean Digest (June 2026 issue)</em> ↗</a> by the Ocean Society of India.
+        </p>
+
+        <div class="btn-group">
+          <a href="https://www.oceansociety.in/TTG_animation_for_OD.html" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Launch 3D Animation ↗</a>
+          <a href="https://www.oceansociety.in/docs/ocean/ocean_digest/2026/Ocean_Digest_June_2026.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--outline">Read Publication (PDF) ↗</a>
+          <a href="research.html" class="btn btn--outline">Full Case Study</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Deep Dive: LRU Cache ── -->
+    <section class="section" id="project-lru-cache">
+      <div class="container article-content">
+        <span class="eyebrow">Data Structures</span>
+        <h2>Custom LRU Cache</h2>
+        <div class="article-header__meta" style="margin-bottom: 24px;">
+          <span><strong>Role:</strong> Backend &amp; Algorithms Developer</span>
+          <span><strong>Stack:</strong> Java, Doubly Linked List, HashMap, Concurrency</span>
+          <span><strong>Repo:</strong> DynM13/custom-LRU-cache</span>
+        </div>
+
+        <p>
+          A low-latency, fixed-capacity in-memory cache in Java providing strictly $O(1)$ time complexity for lookup and eviction using an automated Least Recently Used (LRU) policy.
+        </p>
+
+        <h3>Technical Highlights</h3>
+        <ul>
+          <li><strong>Strict O(1) Time Complexity:</strong> Combined a bidirectional Doubly Linked List with a Java <code>HashMap</code> to ensure constant-time $O(1)$ reads (<code>get</code>) and inserts (<code>put</code>).</li>
+          <li><strong>Direct Pointer Management:</strong> Handled node detachment, head insertion (most recently accessed), and tail removal (least recently accessed) explicitly without third-party collection wrappers.</li>
+          <li><strong>Automated Eviction:</strong> Automatically evicts the least recently accessed tail node from both the linked list and map when maximum capacity is reached on insertion.</li>
+          <li><strong>Concurrency Controls:</strong> Incorporated synchronization blocks to safeguard pointer consistency across concurrent multithreaded read/write operations.</li>
+        </ul>
+
+        <div class="btn-group">
+          <a href="https://github.com/DynM13/custom-LRU-cache" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View on GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">© 2026 Diyan Maner</p>
+      <ul class="site-footer__links">
+        <li><a href="https://github.com/DynM13" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/diyan-maner13/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://x.com/diyan1306" target="_blank" rel="noopener noreferrer">X</a></li>
+        <li><a href="mailto:diyanmaner06@gmail.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
